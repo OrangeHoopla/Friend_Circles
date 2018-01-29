@@ -3,7 +3,7 @@
 Ever want to see how everyone is connected?
 
 # To do list
-* encorporate facebook
+* incorporate facebook
 * fix bugs
 * possibly moving circles
 

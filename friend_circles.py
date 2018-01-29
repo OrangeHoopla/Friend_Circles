@@ -68,6 +68,8 @@ class friend_cirlces():
 
             self.move_circle()
 
+            self.self_move()
+
 
             
 
@@ -143,6 +145,23 @@ class friend_cirlces():
 
             if self.pressed and self.circle_detection(people[key][1],people[key][2]):
                     people[key][1] = pygame.mouse.get_pos()
+
+
+
+
+    def self_move(self):
+
+        for key, value in people.items():
+            adjust = randint(0,2)
+            x = people[key][1][0] 
+            y = people[key][1][1] +  adjust     #randint(-5,5)
+            if y > 900:
+                y = 0
+                x = randint(20,980)
+              #randint(-5,5)
+            people[key][1] = (x,y)
+
+
         
 
 
